@@ -10,7 +10,8 @@ $( document ).ready(function() {
     /*sticky menu*/
 
     $(window).scroll(function () {
-        if($(this).scrollTop()>70){
+        let scrollTop=$(this).scrollTop();
+        if(scrollTop >70){
             $('.menu__nav').addClass('menu__sticky');
             $('.menu img:nth-child(1)').addClass('d-none');
             $('.menu img:nth-child(2)').removeClass('d-none').addClass('d-inline-block');
@@ -23,6 +24,8 @@ $( document ).ready(function() {
             $('.nav-link').addClass('white-text').removeClass('black-text');
         }
     });
+
+
 
 
     /*scroll top animation*/
