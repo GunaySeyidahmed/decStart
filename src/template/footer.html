@@ -1,11 +1,11 @@
         <footer>
-            <div class="footer pt-60 pb-70">
+            <div class="footer">
                 <div class="container">
                     <div class="row">
                         <div class="col-12 col-sm-6 col-md-6 col-lg-3">
                             <div class="footer__list">
                                 <h2 class="footer__title mb-10">Quick Links</h2>
-                                <ul class="list-unstyled">
+                                <ul class="footer__items list-unstyled">
                                     <li class="footer__item"><a class="footer__link" href="#">About us</a></li>
                                     <li class="footer__item"><a class="footer__link" href="#">Faq</a></li>
                                     <li class="footer__item"><a class="footer__link" href="#">Help</a></li>
@@ -18,13 +18,12 @@
                         <div class="col-12 col-sm-6 col-md-6 col-lg-3">
                             <div class="footer__list">
                                 <h2 class="footer__title mb-10">Categories</h2>
-                                <ul class="list-unstyled">
+                                <ul class="footer__items list-unstyled">
                                     <li class="footer__item"><a class="footer__link" href="#">Shops</a></li>
                                     <li class="footer__item"><a class="footer__link" href="#">Hotels</a></li>
                                     <li class="footer__item"><a class="footer__link" href="#">Restaurants</a></li>
                                     <li class="footer__item"><a class="footer__link" href="#">Bars</a></li>
                                     <li class="footer__item"><a class="footer__link" href="#">Events</a></li>
-                                    <li class="footer__item"><a class="footer__link" href="#">View all</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -32,7 +31,7 @@
                             <div class="footer__list">
                                 <h2 class="footer__title mb-10">Contacts</h2>
                                 <ul class="contact list-unstyled">
-                                    <li class="contact__item"><i class="fa fa-home contact__icon"></i><span class="d-block">97845 Baker st. 567 Los Angeles - US</span></li>
+                                    <li class="contact__item"><i class="fa fa-home contact__icon"></i><span class="d-block">97845 Baker st. Los Angeles - US Los Angeles - US</span></li>
                                     <li class="contact__item"><i class="fa fa-headphones contact__icon"></i><span class="d-block">+61 23 8093 3400</span></li>
                                     <li class="contact__item"><i class="fa fa-envelope contact__icon"></i><a href="#" class="contact__link">info@domain.com</a></li>
                                 </ul>
@@ -65,7 +64,7 @@
                         </div>
                     </div>
                 </div>
-                <a href="#" title="back to top" class="scroll-up">
+                <a href="#" class="scroll-up">
                     <i class="fa fa-angle-up"></i>
                 </a>
             </div>
@@ -124,6 +123,13 @@
                         }
                     }
                 ]
+            });
+
+            var scrollTop = 0;
+            $(window).scroll(function () {
+                scrollTop = $(window).scrollTop();
+                if(scrollTop>1248)
+                  $('.call__link').fadeIn("slow").addClass('animation-btn');
             });
         </script>
 </body>

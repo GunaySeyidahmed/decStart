@@ -1,5 +1,7 @@
 .category{
   background-color: $lightBlueColor;
+  padding-top: 60px;
+  padding-bottom: 40px;
   &__link{
     border-radius: 3px;
     overflow: hidden;
@@ -28,6 +30,7 @@
     left: 0;
     padding: 10px 20px !important;
     width: 100%;
+    color: $whiteColor;
     background: linear-gradient(to bottom, transparent, $blackColor);
   }
   &__result{

@@ -1,7 +1,3 @@
-.px-10{
-	padding-left: 10px;
-	padding-right: 10px;
-}
 .white-text{
 	color: $whiteColor !important;
 }
@@ -17,12 +13,8 @@
 .light-black-text{
 	color: $lightBlackColor !important;
 }
-.flex-center{
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	align-content: center;
-	flex-direction: column;
+.p-10{
+	padding: 10px;
 }
 
 .px-10{
@@ -33,17 +25,10 @@
 	padding-top: 15px;
 	padding-bottom: 15px;
 }
-.p-10{
-	padding: 10px;
-}
-.pt-60{
-	padding-top: 60px;
-}
-.pb-40{
-	padding-bottom: 40px;
-}
-.pb-70{
-	padding-bottom: 70px;
+
+.my-20{
+	margin-bottom: 20px;
+	margin-top: 20px;
 }
 .mb-30{
 	margin-bottom: 30px;
@@ -51,10 +36,7 @@
 .mb-10{
 	margin-bottom: 10px;
 }
-.my-20{
-	margin-bottom: 20px;
-	margin-top: 20px;
-}
+
 .ml-2{
 	margin-left: 2px;
 }
@@ -74,12 +56,22 @@
 		font-size: 2.2rem;
 	}
 }
-
+.animation-btn{
+  animation: scale-btn .7s;
+}
 @keyframes rotateY {
 	from{
 		transform: rotateY(0deg)
 	}
 	to{
 		transform: rotateY(360deg);
+	}
+}
+@keyframes scale-btn {
+	from{
+		transform: scale(0.6);
+	}
+	to{
+		transform: scale(1);
 	}
 }

@@ -41,26 +41,32 @@
 <header>
     <div class="menu">
         <nav class="navbar navbar-expand-lg navbar-light bg-transparent menu__nav">
-            <a class="navbar-brand" href="#">
-                <img class="menu__logo" src="../frq-templates/img/logo-white.svg" alt="logo img">
-                <img class="menu__logo d-none" src="../frq-templates/img/logo-blue.svg" alt="logo img">
+            <a class="navbar-brand menu__brand" href="#">
+                <img class="menu__logo" src="frq-templates/img/logo-white.svg" alt="logo img">
+                <img class="menu__logo d-none" src="frq-templates/img/logo-blue.svg" alt="logo img">
             </a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <div class="menu__sign">
+                <a class="nav-link white-text" href="#">
+                    <i class="material-icons">exit_to_app</i>
+                </a>
+            </div>
+
+            <button class="navbar-toggler menu__btn" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
                 <ul class="navbar-nav menu__list">
                     <li class="nav-item px-10">
-                        <a class="nav-link menu__active font-weight-bold" href="#">Home</a>
+                        <a class="nav-link menu__active" href="#">Home</a>
                     </li>
                     <li class="nav-item px-10">
-                        <a class="nav-link white-text font-weight-bold" href="#">Review</a>
+                        <a class="nav-link white-text" href="#">Review</a>
                     </li>
                     <li class="nav-item px-10">
-                        <a class="nav-link white-text font-weight-bold" href="#">Pricing</a>
+                        <a class="nav-link white-text" href="#">Pricing</a>
                     </li>
                     <li class="nav-item px-10">
-                        <a class="nav-link white-text font-weight-bold" href="#">Pages</a>
+                        <a class="nav-link white-text" href="#">Pages</a>
                     </li>
                     <li class="nav-item px-10">
                         <a class="nav-link white-text link px-10 py-15" href="#">Write Review</a>
@@ -70,7 +76,7 @@
                     </li>
                     <li class="nav-item px-10">
                         <a class="nav-link white-text" href="#">
-                            <i class="material-icons">exit_to_app</i>
+                            <i class="material-icons menu__login">exit_to_app</i>
                         </a>
                     </li>
                 </ul>
@@ -81,43 +87,16 @@
 <main>
 <div class="home">
     <section class="banner">
-            <div class="banner__overlay flex-center">
-                <div class="container">
-                    <div class="col-12 col-sm-10 col-lg-8 banner__info">
-                        <h1 class="banner__title">Every Review is an Experience!</h1>
-                        <p class="banner__subtitle">Check Ratings of Businesses, Read Reviews & Buy</p>
-                        <div class="banner__form">
-                            <form action="#">
-                                <div class="row">
-                                    <div class="col-lg-7">
-                                        <div class="form-group">
-                                            <input type="search" class="form-control" placeholder="search">
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-3">
-                                        <div class="form-group">
-                                            <select class="form-control">
-                                                <option>1</option>
-                                                <option>2</option>
-                                                <option>3</option>
-                                                <option>4</option>
-                                                <option>5</option>
-                                            </select>
-                                        </div>
-                                    </div>
-                                    <div class="col-lg-2">
-                                        <div class="form-group">
-                                            <button class="btn btn-outline-secondary" type="button">Button</button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
+        <div class="banner__overlay">
+            <div class="container">
+                <div class="col-12 col-sm-10 col-lg-9 banner__info">
+                    <h1 class="banner__title">Every Review is an Experience!</h1>
+                    <p class="banner__subtitle">Check Ratings of Businesses, Read Reviews & Buy Check Ratings of Businesses, Read Reviews & Buy</p>
                 </div>
             </div>
+        </div>
     </section>
-    <section class="category pt-60 pb-40">
+    <section class="category">
         <div class="container">
             <h2 class="page__title">Top Categories</h2>
             <p class="page__subtitle mb-20">
@@ -129,7 +108,7 @@
                         <a href="#" class="category__link d-block mb-30">
                             <div class="category__media">
                                 <img class="category__img" src="frq-templates/img/cat1.jpg" alt="category img">
-                                <div class="category__info white-text">
+                                <div class="category__info">
                                     <p class="category__result">122 Results</p>
                                     <div class="category__comment">
                                         <span class="category__type">Clothing</span>
@@ -146,7 +125,7 @@
                     <a href="#" class="category__link d-block mb-30">
                         <div class="category__media">
                             <img class="category__img" src="frq-templates/img/cat2.jpg" alt="category img">
-                            <div class="category__info white-text">
+                            <div class="category__info">
                                 <p class="category__result">1212 Results</p>
                                 <div class="category__comment">
                                     <span class="category__type">Hotels</span>
@@ -163,7 +142,7 @@
                     <a href="#" class="category__link d-block mb-30">
                         <div class="category__media">
                             <img class="category__img" src="frq-templates/img/cat3.jpg" alt="category img">
-                            <div class="category__info white-text">
+                            <div class="category__info">
                                 <p class="category__result">121 Results</p>
                                 <div class="category__comment">
                                     <span class="category__type">Restaurants</span>
@@ -180,7 +159,7 @@
                     <a href="#" class="category__link d-block mb-30">
                         <div class="category__media">
                             <img class="category__img" src="frq-templates/img/cat4.jpg" alt="category img">
-                            <div class="category__info white-text">
+                            <div class="category__info">
                                 <p class="category__result">98 Results</p>
                                 <div class="category__comment">
                                     <span class="category__type">Bars</span>
@@ -197,7 +176,7 @@
                     <a href="#" class="category__link d-block mb-30">
                         <div class="category__media">
                             <img class="category__img" src="frq-templates/img/cat5.jpg" alt="category img">
-                            <div class="category__info white-text">
+                            <div class="category__info">
                                 <p class="category__result">921 Results</p>
                                 <div class="category__comment">
                                     <span class="category__type">Electronic</span>
@@ -214,7 +193,7 @@
                     <a href="#" class="category__link d-block mb-30">
                         <div class="category__media">
                             <img class="category__img" src="frq-templates/img/cat6.jpg" alt="category img">
-                            <div class="category__info white-text">
+                            <div class="category__info">
                                 <p class="category__result">91 Results</p>
                                 <div class="category__comment">
                                     <span class="category__type">Beauty</span>
@@ -230,7 +209,7 @@
             </div>
         </div>
     </section>
-    <section class="review pt-60 pb-70">
+    <section class="review">
         <div class="container">
             <h2 class="page__title">Latest Reviews</h2>
             <p class="page__subtitle">
@@ -353,22 +332,22 @@
     </section>
     <section class="call">
         <div class="call__overlay">
-            <div class="container d-flex justify-content-end align-items-center">
-                <div class="col-lg-5 col-md-7">
-                    <h2 class="call__title white-text">Let's Help You</h2>
-                    <p class="call__subtitle white-text">
-                        Vanno is a review platform open to everyone.
-                        Share your experiences to help others make better choices,
-                        and help companies up their game. Our mission is to bring
-                        people and companies together to create experiences for
-                        everyone.
-                    </p>
+            <div class="container">
+                <div class="col-md-10 col-lg-5 call__description">
+                    <h2 class="call__title">Let's Help You</h2>
+                    <p class="call__subtitle">
+                            Vanno is a review platform open to everyone.
+                            Share your experiences to help others make better choices,
+                            and help companies up their game. Our mission is to bring
+                            people and companies together to create experiences for
+                            everyone.
+                        </p>
                     <a class="call__link link my-20" href="#">Join Vanno Now!</a>
                 </div>
             </div>
         </div>
     </section>
-    <section class="cats pt-60 pb-40">
+    <section class="cats">
         <div class="container">
             <h2 class="page__title">Top Categories</h2>
             <p class="page__subtitle mb-20">
@@ -480,13 +459,13 @@
 </div>
 </main>
         <footer>
-            <div class="footer pt-60 pb-70">
+            <div class="footer">
                 <div class="container">
                     <div class="row">
                         <div class="col-12 col-sm-6 col-md-6 col-lg-3">
                             <div class="footer__list">
                                 <h2 class="footer__title mb-10">Quick Links</h2>
-                                <ul class="list-unstyled">
+                                <ul class="footer__items list-unstyled">
                                     <li class="footer__item"><a class="footer__link" href="#">About us</a></li>
                                     <li class="footer__item"><a class="footer__link" href="#">Faq</a></li>
                                     <li class="footer__item"><a class="footer__link" href="#">Help</a></li>
@@ -499,13 +478,12 @@
                         <div class="col-12 col-sm-6 col-md-6 col-lg-3">
                             <div class="footer__list">
                                 <h2 class="footer__title mb-10">Categories</h2>
-                                <ul class="list-unstyled">
+                                <ul class="footer__items list-unstyled">
                                     <li class="footer__item"><a class="footer__link" href="#">Shops</a></li>
                                     <li class="footer__item"><a class="footer__link" href="#">Hotels</a></li>
                                     <li class="footer__item"><a class="footer__link" href="#">Restaurants</a></li>
                                     <li class="footer__item"><a class="footer__link" href="#">Bars</a></li>
                                     <li class="footer__item"><a class="footer__link" href="#">Events</a></li>
-                                    <li class="footer__item"><a class="footer__link" href="#">View all</a></li>
                                 </ul>
                             </div>
                         </div>
@@ -513,7 +491,7 @@
                             <div class="footer__list">
                                 <h2 class="footer__title mb-10">Contacts</h2>
                                 <ul class="contact list-unstyled">
-                                    <li class="contact__item"><i class="fa fa-home contact__icon"></i><span class="d-block">97845 Baker st. 567 Los Angeles - US</span></li>
+                                    <li class="contact__item"><i class="fa fa-home contact__icon"></i><span class="d-block">97845 Baker st. Los Angeles - US Los Angeles - US</span></li>
                                     <li class="contact__item"><i class="fa fa-headphones contact__icon"></i><span class="d-block">+61 23 8093 3400</span></li>
                                     <li class="contact__item"><i class="fa fa-envelope contact__icon"></i><a href="#" class="contact__link">info@domain.com</a></li>
                                 </ul>
@@ -546,7 +524,7 @@
                         </div>
                     </div>
                 </div>
-                <a href="#" title="back to top" class="scroll-up">
+                <a href="#" class="scroll-up">
                     <i class="fa fa-angle-up"></i>
                 </a>
             </div>
@@ -605,6 +583,13 @@
                         }
                     }
                 ]
+            });
+
+            var scrollTop = 0;
+            $(window).scroll(function () {
+                scrollTop = $(window).scrollTop();
+                if(scrollTop>1248)
+                  $('.call__link').fadeIn("slow").addClass('animation-btn');
             });
         </script>
 </body>

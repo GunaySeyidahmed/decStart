@@ -5,7 +5,9 @@
   background-color: $blueColor;
   color: $whiteColor !important;
   line-height: .5rem;
-  font-weight: bold;
+  @include respondmax(lg){
+    margin-bottom: 15px;
+  }
   &:hover{
     background-color: $yellowColor;
     text-decoration: none;

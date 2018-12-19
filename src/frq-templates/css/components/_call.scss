@@ -14,11 +14,19 @@
     display: flex;
     align-items: center;
   }
+  &__description{
+    margin-left: auto;
+    @include respondmax(lg){
+      margin: auto;
+    }
+  }
   &__title{
     font-size: 3.6rem;
+    color:$whiteColor;
   }
   &__subtitle{
     font-size: 1.6rem;
+    color:$whiteColor;
   }
   &__link{
     padding: 18px 24px;

@@ -5,10 +5,39 @@
     position: absolute;
     width: 100%;
     padding: 8px 35px;
+    @include respondmax(lg){
+      display: flex;
+    }
+  }
+  &__responsive{
+    @include respondmax(lg){
+      background: $gray7Color !important;
+      z-index: 9999;
+      color: $blackColor;
+    }
+  }
+  &__btn{
+    @include respondmax(lg){
+      order: -9;
+    }
   }
   &__logo{
-    width:150px;
-    height:40px;
+    width:140px;
+    height:35px;
+  }
+  &__brand{
+    margin-right: 0 !important;
+  }
+  &__sign{
+    display: none;
+    @include respondmax(lg){
+      display: block !important;
+    }
+  }
+  &__login{
+    @include respondmax(lg){
+      display: none !important;
+    }
   }
   &__list{
     align-items: center;
