@@ -1,0 +1,25 @@
+.home {
+  .slick-slide {
+    transform: scale(1);
+    opacity: .6;
+    transition: .3s ease-in-out all;
+    @include respondmax(md) {
+      opacity: 1 !important;
+    }
+  }
+  .slick-slide.slick-center {
+    opacity: 1;
+    transform: scale(1.1);
+    .review__item {
+      box-shadow: 0px 0px 20px 0px rgba(3, 27, 78, 0.1);
+    }
+  }
+  .slick-dots li button:before {
+    font-size: 13px;
+    opacity: 1;
+    color: $grayColor;
+  }
+  .slick-dots li.slick-active button:before {
+    color: $blueColor !important;
+  }
+}

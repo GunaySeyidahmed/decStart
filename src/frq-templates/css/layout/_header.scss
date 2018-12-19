@@ -1,0 +1,28 @@
+.menu{
+  display: flex;
+  justify-content: center;
+  &__nav{
+    position: absolute;
+    width: 100%;
+    padding: 8px 35px;
+  }
+  &__logo{
+    width:150px;
+    height:40px;
+  }
+  &__list{
+    align-items: center;
+  }
+  &__sticky{
+    position: fixed;
+    z-index: 999999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    background-color: $whiteColor !important;
+    transition: all .4s !important;
+  }
+  &__active{
+    color: $blackColor !important;
+  }
+}

@@ -1,3 +1,85 @@
-.azn {
-	font-family: $aznb;
+.px-10{
+	padding-left: 10px;
+	padding-right: 10px;
+}
+.white-text{
+	color: $whiteColor !important;
+}
+.black-text{
+	color: $blackColor !important;
+}
+.gray-text{
+	color: $grayColor !important;
+}
+.blue-text{
+	color: $blueColor !important;
+}
+.light-black-text{
+	color: $lightBlackColor !important;
+}
+.flex-center{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+	flex-direction: column;
+}
+
+.px-10{
+	padding-left: 10px !important;
+	padding-right: 10px !important;
+}
+.py-15{
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+.p-10{
+	padding: 10px;
+}
+.pt-60{
+	padding-top: 60px;
+}
+.pb-40{
+	padding-bottom: 40px;
+}
+.pb-70{
+	padding-bottom: 70px;
+}
+.mb-30{
+	margin-bottom: 30px;
+}
+.mb-10{
+	margin-bottom: 10px;
+}
+.my-20{
+	margin-bottom: 20px;
+	margin-top: 20px;
+}
+.ml-2{
+	margin-left: 2px;
+}
+
+.scroll-up{
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	background-color: rgba(0,0,0,0.6);
+	position: fixed;
+	right: 25px;
+	bottom: 25px;
+	text-align: center;
+	line-height: 40px;
+	i{
+		color: $whiteColor;
+		font-size: 2.2rem;
+	}
+}
+
+@keyframes rotateY {
+	from{
+		transform: rotateY(0deg)
+	}
+	to{
+		transform: rotateY(360deg);
+	}
 }

@@ -1,0 +1,32 @@
+.cats{
+  background-color: $lightBlueColor;
+  &__item{
+    text-align: center;
+    padding: 25px 15px 0;
+    margin-bottom: 25px;
+    background-color: $whiteColor;
+    display: block;
+    text-decoration: none !important;
+    &:hover{
+      img{
+        animation: rotateY .8s;
+      }
+    }
+  }
+  &__media{
+    width: 65px;
+    height: 65px;
+    margin: auto;
+  }
+  &__img{
+    transition: all .5s;
+  }
+  &__rating{
+    color: $gray7Color !important;
+    display: flex;
+    justify-content: space-between;
+    i{
+      margin-left: 5px;
+    }
+  }
+}

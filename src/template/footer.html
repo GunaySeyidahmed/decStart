@@ -1,10 +1,80 @@
         <footer>
-
+            <div class="footer pt-60 pb-70">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 col-sm-6 col-md-6 col-lg-3">
+                            <div class="footer__list">
+                                <h2 class="footer__title mb-10">Quick Links</h2>
+                                <ul class="list-unstyled">
+                                    <li class="footer__item"><a class="footer__link" href="#">About us</a></li>
+                                    <li class="footer__item"><a class="footer__link" href="#">Faq</a></li>
+                                    <li class="footer__item"><a class="footer__link" href="#">Help</a></li>
+                                    <li class="footer__item"><a class="footer__link" href="#">My account</a></li>
+                                    <li class="footer__item"><a class="footer__link" href="#">Create account</a></li>
+                                    <li class="footer__item"><a class="footer__link" href="#">Contacts</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-6 col-lg-3">
+                            <div class="footer__list">
+                                <h2 class="footer__title mb-10">Categories</h2>
+                                <ul class="list-unstyled">
+                                    <li class="footer__item"><a class="footer__link" href="#">Shops</a></li>
+                                    <li class="footer__item"><a class="footer__link" href="#">Hotels</a></li>
+                                    <li class="footer__item"><a class="footer__link" href="#">Restaurants</a></li>
+                                    <li class="footer__item"><a class="footer__link" href="#">Bars</a></li>
+                                    <li class="footer__item"><a class="footer__link" href="#">Events</a></li>
+                                    <li class="footer__item"><a class="footer__link" href="#">View all</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-6 col-lg-3">
+                            <div class="footer__list">
+                                <h2 class="footer__title mb-10">Contacts</h2>
+                                <ul class="contact list-unstyled">
+                                    <li class="contact__item"><i class="fa fa-home contact__icon"></i><span class="d-block">97845 Baker st. 567 Los Angeles - US</span></li>
+                                    <li class="contact__item"><i class="fa fa-headphones contact__icon"></i><span class="d-block">+61 23 8093 3400</span></li>
+                                    <li class="contact__item"><i class="fa fa-envelope contact__icon"></i><a href="#" class="contact__link">info@domain.com</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-6 col-md-6 col-lg-3">
+                            <div class="footer__list">
+                                <h2 class="footer__title mb-10">Keep in touch</h2>
+                                <div class="footer__subscribe list-unstyled">
+                                    <form action="#">
+                                        <div class="input-group mb-3">
+                                            <input type="text" class="form-control" placeholder="Recipient's username" aria-label="Recipient's username" aria-describedby="button-addon2">
+                                            <div class="input-group-append">
+                                                <button class="btn link" type="button" id="button-addon2">Submit</button>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="footer__social mt-20">
+                                    <h2 class="footer__title mb-10">Follow Us</h2>
+                                    <ul class="footer__social list-unstyled">
+                                        <li class="list-inline-item"><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                        <li class="list-inline-item ml-20"><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                        <li class="list-inline-item ml-20"><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                                        <li class="list-inline-item ml-20"><a href="#"><i class="fa fa-pinterest"></i></a></li>
+                                        <li class="list-inline-item ml-20"><a href="#"><i class="fa fa-instagram"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <a href="#" title="back to top" class="scroll-up">
+                    <i class="fa fa-angle-up"></i>
+                </a>
+            </div>
         </footer>
         <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
         <script>window.jQuery || document.write('<script src="frq-templates/libs/jquery/dist/jquery.min.js"><\/script>')</script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
         <script src="frq-templates/libs/bootstrap/dist/js/bootstrap.min.js" type="text/javascript" charset="utf-8" async defer></script>
+        <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
         <script src="frq-templates/js/all.min.js"></script>
 
       <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
@@ -13,5 +83,48 @@
         ga('create','UA-XXXXX-Y','auto');ga('send','pageview')
       </script>
     <script src="https://www.google-analytics.com/analytics.js" async defer></script>
+        <script>
+            /*slider section*/
+            $('.review__list').slick({
+                dots: true,
+                speed: 100,
+                arrows:false,
+                centerMode: true,
+                centerPadding:'10px',
+                infinite: true,
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                fadeIn:true,
+                responsive: [
+                    {
+                        breakpoint: 1024,
+                        settings: {
+                            slidesToShow: 3,
+                            slidesToScroll: 3,
+                            infinite: true,
+                            dots:false
+                        }
+                    },
+                    {
+                        breakpoint: 768,
+                        settings: {
+                            slidesToShow: 2,
+                            slidesToScroll: 1,
+                            dots:false,
+                            centerMode: false
+                        }
+                    },
+                    {
+                        breakpoint: 568,
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1,
+                            centerMode: false,
+                            dots:false
+                        }
+                    }
+                ]
+            });
+        </script>
 </body>
 </html>

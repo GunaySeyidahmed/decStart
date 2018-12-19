@@ -1,0 +1,23 @@
+.contact{
+    max-width: 76%;
+    &__item{
+        font-size: 1.6rem;
+        margin-bottom: 4px;
+        color: $lightGrayColor;
+        display: flex;
+        align-items: center;
+    }
+    &__icon{
+        font-size: 2rem;
+        margin-right: 8px;
+        color: $blueColor;
+        font-weight: lighter;
+        float: left;
+    }
+    &__link{
+        color: $lightGrayColor;
+        &:hover{
+            text-decoration: none;
+        }
+    }
+}
