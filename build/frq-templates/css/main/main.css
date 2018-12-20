@@ -486,19 +486,22 @@ body {
     font-size: 1.3rem;
     color: #222; }
 
-.product {
+.product__title {
   color: #000;
   font-size: 1.4rem; }
-  .product__great {
-    font-size: 1.4rem;
-    font-weight: bold;
-    color: #222; }
-  .product__description {
-    color: #222;
-    font-size: 1.3rem; }
-  .product__link {
-    text-decoration: none !important;
-    color: #3578fa; }
+
+.product__great {
+  font-size: 1.4rem;
+  font-weight: bold;
+  color: #222; }
+
+.product__description {
+  color: #222;
+  font-size: 1.3rem; }
+
+.product__link {
+  text-decoration: none !important;
+  color: #3578fa; }
 
 .call {
   background: url("../../img/bg_call.jpg") no-repeat center fixed;

@@ -1,6 +1,8 @@
 .product{
+  &__title{
     color: $blackColor;
     font-size: 1.4rem;
+  }
   &__great{
     font-size: 1.4rem;
     font-weight: bold;

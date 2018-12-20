@@ -6,7 +6,6 @@ $( document ).ready(function() {
         $(this).parent().toggleClass("menu__responsive");
     });
 
-
     /*sticky menu*/
 
     $(window).scroll(function () {
